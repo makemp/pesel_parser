@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %(Parses PESEL number. Validates PESEL, fetches birth date, sex and series number)
   spec.license       = 'MIT'
 
-  spec.files         = %w(lib/pesel_parser.rb lib/pesel_inspector.rb)
+  spec.files         = %w(lib/pesel_parser.rb lib/pesel_inspector.rb lib/string.rb lib/fixnum.rb)
   spec.require_paths = %w(lib)
 
   spec.add_development_dependency 'bundler', '~> 1.8'

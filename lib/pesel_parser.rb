@@ -1,14 +1,10 @@
 require_relative 'pesel_inspector'
-# Monkey patch
+require_relative 'string'
+require_relative 'fixnum'
+require_relative 'p_parser'
+# Core file
 module PeselParser
   def self.root
     File.dirname __dir__
   end
-
-  def inspect_pesel
-    PeselInspector.new(self)
-  end
 end
-
-String.send(:include, PeselParser)
-Fixnum.send(:include, PeselParser)
