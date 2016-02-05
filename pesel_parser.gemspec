@@ -6,13 +6,13 @@ require 'pesel_parser'
 
 Gem::Specification.new do |spec|
   spec.name          = 'pesel_parser'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ['Maciej Kempin']
 
   spec.summary       = %(Parses PESEL number. Validates PESEL, fetches birth date, sex and series number)
   spec.license       = 'MIT'
 
-  spec.files         = %w(lib/pesel_parser.rb lib/pesel_inspector.rb lib/string.rb lib/fixnum.rb)
+  spec.files         = %w(lib/pesel_parser.rb lib/pesel_inspector.rb lib/string.rb lib/fixnum.rb lib/p_parser.rb)
   spec.require_paths = %w(lib)
 
   spec.add_development_dependency 'bundler', '~> 1.8'
